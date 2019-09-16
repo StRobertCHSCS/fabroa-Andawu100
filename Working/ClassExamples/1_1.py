@@ -1,0 +1,15 @@
+print("bonjour monde")
+print("What's wrong with this statement?")
+print("How about this one?")
+print(5)
+print(3.14)
+print(5-3)
+print(20/5)
+print(2*7)
+print(9+10)
+print("Here are the ages of my three children: ", 12, 7, 4)
+print(3.14, "is my favourite pi")
+length = 16
+width = 20
+print("The dimensions of the yard are", length, "by", width)
+print("The perimeter is", length+length+width+width)
