@@ -13,3 +13,4 @@ length = 16
 width = 20
 print("The dimensions of the yard are", length, "by", width)
 print("The perimeter is", length+length+width+width)
+print(9//2, (9 % 2))
