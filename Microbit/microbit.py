@@ -2,8 +2,8 @@ from microbit import *
 import music
 
 # pins
-ADKeypad_pin = pin3
-Buzzer_pin = pin2
+ADKeypad_pin = pin2
+Buzzer_pin = pin0
 
 while True:
     # buttonA
@@ -20,10 +20,10 @@ while True:
 
     # button d
     if ADKeypad_pin.readanalog() > 136 and ADKeypad_pin.read_analog() < 139
-        music.play('d5:4', pin=Buzzer_pin)
+        music.play('g4:4', pin=Buzzer_pin)
 
     # button e
     if ADKeypad_pin.readanalog() > 535 and ADKeypad_pin.read_analog() < 545
-        music.play('c5:4', pin=Buzzer_pin)
+        music.play('g4:4', pin=Buzzer_pin)
  
 
