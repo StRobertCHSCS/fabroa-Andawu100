@@ -1,11 +1,9 @@
 from microbit import *
 
-pin0.set_analog_period(20)
+microservo = pin1
+
+microservo.set_analog_period(5)
 
 while True: 
-	pin0.write_analog(150)
-	sleep(10000)
-	pin0.write_analog(100)
-	sleep(10000)
-	pin0.write_analog(200)
-	sleep(10000)
+			microservo.write_analog(500)
+			sleep(2000)
