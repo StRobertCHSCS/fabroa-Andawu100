@@ -19,8 +19,7 @@ while True:
 
     if pir_sensor.read_digital():
         led_blue.write_digital(1)
-        microservo.write_analog(500)
-        sleep(2000)
+       
     else:
          led_blue.write_digital(0)
         
