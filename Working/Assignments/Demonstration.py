@@ -11,8 +11,7 @@ crash_sensor = pin4
 pir_sensor = pin5
 led_red = pin6
 
-microservo.set_analog_period(20)
-
+microservo.set_analog_period(5)
 
 while True:
     
@@ -24,18 +23,18 @@ while True:
     else:
          led_blue.write_digital(0)
 
-function init(width: 128,height 64)
 
 while True:
 
-    if crash_sensor.pressed:
+    if ():
         display.scroll("Clear!")
-        led_red.write_digital(0)
+        led_red.write_digital(1)
 
     else:
-         led_red.write_digital(1)
-
-
+         led_red.write_digital(0)
+         microservo.write_analog(1000)
+         sleep(200)
+			
 
 
 
