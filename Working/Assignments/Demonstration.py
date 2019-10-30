@@ -1,6 +1,6 @@
 from microbit import *
 import time 
-import music 
+import music
 
 #assign pins
 sound = pin0
@@ -34,6 +34,8 @@ while True:
          led_red.write_digital(0)
          microservo.write_analog(1000)
          sleep(200)
+
+
 			
 
 
