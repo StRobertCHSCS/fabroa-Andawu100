@@ -11,13 +11,12 @@ crash_sensor = pin4
 pir_sensor = pin5
 led_red = pin6
 
-
 while True:
     
 #When motion is detected turn on light
     if pir_sensor.read_digital():
         led_blue.write_digital(1)
-        #amusic.play(music.BLUES)
+        #music.play(music.BLUES)
 
     else:
          led_blue.write_digital(0)
@@ -25,19 +24,15 @@ while True:
 
 while True:
 
-    if temperature == (20):
-        display.scroll("Clear")
-        led_red.write_digital(0)
+    if microbit.accelerometer.get_values():
+       led_red.write_digital(1)
 
-    elif temperature => (20):
-        led_red.write_digital(1)
-    
     else:
+         led_red.write_digital(0)
          display.scroll("Something is not right")
+
          
 
-
-			
 
 
 
